@@ -1,0 +1,76 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.float-app {
+  cursor: move;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.float-app .icon img {
+  width: 50px;
+  background-color: rgb(39, 166, 251);
+}
+
+.float-app .icon {
+  width: fit-content;
+}
+
+.app-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgba(128, 193, 237, .8);
+  color: #fff;
+}
+
+.app-content input {
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  height: 25px;
+}
+
+.app-content input:active,
+.app-content input:focus-visible {
+  border: 1px solid red;
+}
+
+.dynamic .icon {
+  width: 200px;
+  border-radius: 4px;
+  text-align: left;
+  background-color: rgb(39, 166, 251);
+}
+
+.dynamic .icon img {
+  margin: 0 .5em;
+}
+
+.maincontent {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 10px;
+}
